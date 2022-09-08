@@ -15,8 +15,8 @@
         name: nginx
         state: started 
 
-    - name: file creation   
-      file:
-        path: /tmp/toto.txt
-        state: file      
+#    - name: file creation   
+#      file:
+#        path: /tmp/toto.txt
+#        state: touch      
 

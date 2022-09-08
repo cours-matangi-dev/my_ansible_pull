@@ -1,0 +1,9 @@
+all:
+  children:
+    webserver:
+      hosts:
+        ip-172-31-21-218:
+    dbserver:
+      hosts:
+        node2:
+          ansible_host: 34.201.53.127
