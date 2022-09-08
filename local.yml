@@ -1,0 +1,17 @@
+- name: ansible-pull
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: nginx started
+      service:
+        name: nginx
+        state: started 
+
