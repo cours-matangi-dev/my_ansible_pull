@@ -1,0 +1,5 @@
+all:
+  children:
+    groupe1:
+      hosts:
+        ip-172-31-21-218:
