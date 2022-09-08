@@ -1,5 +1,6 @@
 - name: ansible-pull
-  hosts: localhost
+#  hosts: localhost
+  hosts: all
   connection: local
   become: yes
   tasks:
@@ -15,8 +16,8 @@
         name: nginx
         state: started 
 
-#    - name: file creation   
-#      file:
-#        path: /tmp/toto.txt
-#        state: touch      
+    - name: file creation   
+      file:
+        path: /tmp/toto.txt
+        state: touch      
 
